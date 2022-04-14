@@ -22,7 +22,7 @@
 
 // Array and Array methods
 
-// const numbers = [43, 45, 33, 44, 55];
+// const numbers = [33, 45, 43, 44, 55, 60];
 // const numbers2 = new Array(22, 65, 73, 14, 35);
 // const fruit = ["Apple", "Banana", "Orange", "pear"];
 // const mixed = [22, "hello", true, undefined, null, { a: 1, b: 1 }, new Date()];
@@ -76,7 +76,7 @@
 
 // // find
 // function under50(num) {
-//     return num < 50;
+//     return num > 50;
 
 // }
 
@@ -194,7 +194,7 @@
 // let text = "";
 // for (let x in arrayOfObjects) {
 //   text += arrayOfObjects[x] + "";
-//   console.log([x], arrayOfObjects[x] );
+//   console.log(x, arrayOfObjects[x] );
 // }
 
 // using for each loop on array of objects
@@ -208,10 +208,77 @@
 //  Event Bubbling
 
 
+//  document.querySelector("#grandParent")
+//    .addEventListener('click', () => {
+//   console.log("Grandparent has clicked!")
+//    }) ;
+//  document.querySelector("#parent")
+//    .addEventListener('click', () => {
+//   console.log("parent has clicked!")
+//    }) ;
+//  document.querySelector("#child")
+//    .addEventListener('click', () => {
+//   console.log("child has clicked!")
+//    }) ;
+
+// stop propagation in Event Bubbling
+
+// document.querySelector("#grandParent")
+// .addEventListener('click', () => {
+//     console.log("Grandparent has clicked!")
+//     }, false) ;
+//     document.querySelector("#parent")
+//     .addEventListener('click', (e) => {
+//     console.log("parent has clicked!")
+//     e.stopPropagation;
+//     }, false) ;
+//     document.querySelector("#child")
+//     .addEventListener('click', () => {
+//     console.log("child has clicked!")
+//     }, false) ;
 
 // Event capturing
 
+
+
+// document.querySelector("#grandParent")
+// .addEventListener('click', () => {
+// console.log("Grandparent has clicked!")
+// }, true) ;
+// document.querySelector("#parent")
+// .addEventListener('click', () => {
+// console.log("parent has clicked!")
+// }, true) ;
+// document.querySelector("#child")
+// .addEventListener('click', () => {
+// console.log("child has clicked!")
+// }, true) ;
+
+
+// stop propagation in Event capturing or trickling down
+
+// document.querySelector("#grandParent")
+// .addEventListener('click', () => {
+// console.log("Grandparent has clicked!")
+// }, true) ;
+// document.querySelector("#parent")
+// .addEventListener('click', (e) => {
+// console.log("parent has clicked!")
+// e.stopPropagation;
+// }, true) ;
+// document.querySelector("#child")
+// .addEventListener('click', () => {
+// console.log("child has clicked!")
+// }, true) ;
+
 //  Event delegation
+// less code limitions not to use stop propagation
+// document.querySelector("#form").addEventListener('keyup', (e) => {
+//     console.log(e);
+//     if (e.target.dataset.uppercase != undefined) {
+//         e.target.value = e.target.value.toUpperCase();
+//     }
+// })
 
 //  OOP
 
