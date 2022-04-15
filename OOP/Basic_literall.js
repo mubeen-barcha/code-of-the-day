@@ -1,3 +1,18 @@
+// OOP 
+// Object Oriented programming 
+// Introduce in  ES6 VERISON 
+
+// Coding methodology /style/pattern
+// .code more Modular and Reusable
+// .well orgainzed code
+// .easier to debug
+// best for medium to large website projects 
+
+
+
+
+
+
 const books = {
     name: "book1",
     author: "john bhai",

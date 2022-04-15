@@ -230,7 +230,8 @@
 //     document.querySelector("#parent")
 //     .addEventListener('click', (e) => {
 //     console.log("parent has clicked!")
-//     e.stopPropagation;
+//     // e.stopPropagation();
+//     e.preventDefault;
 //     }, false) ;
 //     document.querySelector("#child")
 //     .addEventListener('click', () => {
@@ -264,7 +265,7 @@
 // document.querySelector("#parent")
 // .addEventListener('click', (e) => {
 // console.log("parent has clicked!")
-// e.stopPropagation;
+// e.stopPropagation();
 // }, true) ;
 // document.querySelector("#child")
 // .addEventListener('click', () => {
