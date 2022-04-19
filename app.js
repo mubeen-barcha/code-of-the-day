@@ -140,10 +140,16 @@
 //   { id: 3, name: "sarah" },
 //   { id: 4, name: "alee" },
 // ];
-
+ 
+// returning the id in array by Map methods
 // const ids = users.map(function (users) {
 //   return users.id;
 // });
+// returning the name in array  by Map methods
+// const names = users.map(function (users) {
+//   return users.name
+// });
+// console.log(names)
 
 // console.log(ids);
 
@@ -290,7 +296,56 @@
 //  what are Generators
 
 //  fetch api
+// fetch('http://example.com/songs')
+	// .then(response => response.json())
+	// .then(data => console.log(data))
+	// .catch(err => console.error(err));
+
+    //Obj of data to send in future like a dummyDb
+// const data = { username: 'example' };
+
+//POST request with body equal on data in JSON format
+// fetch('https://example.com/profile', {
+//   method: 'POST',
+//   headers: {
+    // 'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(data),
+// })
+
+
+
+
+// another example
+// const data = { username: 'example' };
+
+// fetch('https://example.com/profile', {
+//   method: 'POST', // or 'PUT'
+//   headers: {
+    // 'Content-Type': 'application/json',
+//   },
+//   body: JSON.stringify(data),
+// })
+// .then(response => response.json())
+// .then(data => {
+//   console.log('Success:', data);
+// })
+// .catch((error) => {
+//   console.error('Error:', error);
+// });
 
 //  aysnc await
 
 // console.log('here')
+
+
+// RoadMap
+// 1. HTML
+// 2.CSS
+// 3.JAVASCRIPT
+// 4.FRAMEWORKS AND LIBRARIES (ANGULAR) (REACT.JS) (VUE.JS) 
+// (NEXT.JS) (AXIOS) (RXJS)
+// 5.COMPONENT/LIBRARIES.JSX (SEMANTIC UI)
+// 6.SOFTWARE/DEV.TOOLS (chrome dev.toolS)
+// 7.DOCKER/DEPLOY.STATUS (Github page) (vercel) (Netlify)
+// 8.Bonus/learning.path (typescript)
