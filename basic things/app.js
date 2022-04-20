@@ -153,6 +153,35 @@
 
 // console.log(ids);
 
+// const arr = [1,2,3,4]
+
+// let result = arr.map(()=>{
+//     return arr.length
+// })
+// console.log(result)
+
+// // reduce method
+// var array = [36, 25, 6, 15];
+
+
+// let sum3 = array.reduce((acc, val)=>{
+//     return acc + val
+// })
+// console.log(sum3)
+
+// let sum1 = array.reduce(function(accumulator, currentValue) {
+//   return  accumulator + currentValue;
+// }, 0); // 36 + 25 + 6 + 15 = 82
+//  console.log(sum1)
+
+//  let numbers = [1, 2, 3];
+// let sum = numbers.reduce(function (previousValue, currentValue) {
+//     return  previousValue + currentValue;
+// });
+
+// console.log(sum);
+
+
 // FOR IN LOOP
 // const user = {
 //   firstName: "john",
@@ -185,12 +214,12 @@
 //   { names: "khifayat", age: 26, location: "nager" },
 //   { names: "faizan", age: 20, location: "aliabad" },
 // ];
-// using for of loop on array of objects
+// // using for of loop on array of objects
 //   for (let element of arrayOfObjects) {
 //   console.log([element]);
 //   }
 
-//using for loop on array of objects
+// //using for loop on array of objects
 //   for (item= 0; item < arrayOfObjects.length; item++) {
 
 //      console.log(arrayOfObjects[item].names+'_______'+arrayOfObjects[item].age +' _________'+arrayOfObjects[item].location + '<br>')
