@@ -153,6 +153,61 @@
 
 // console.log(ids);
 
+
+
+// filter
+
+// const myArray = [
+//     { id: 1, name: "Mark" },
+//     { id: 2, name: "Sam" },
+//     { id: 3, name: "Sandy" },
+//     { id: 4, name: "Mark" },
+//   ]
+  
+//   let num = myArray.filter(element => element.name === "Mark")
+//   //-------> Output : 0:{id: 1, name: "Mark"},
+//   //                  1:{id: 4, name: "Mark"}
+  
+// console.log(num);
+
+// let students = [
+//     {
+//         firstName: 'Johnny',
+//         lastName: 'Lee',
+//         age: 20,
+//     },
+
+//     {
+//         firstName: 'Anna',
+//         lastName: 'Zax',
+//         age: 19,
+
+//     },
+
+//     {
+//         firstName: 'Zion',
+//         lastName: 'Sanches',
+//         age: 22,
+
+//     }
+// ];
+
+// let sum = students.sort((a, b) => {
+//     return a.age - b.age;
+// });
+// console.log(sum)
+
+
+
+// students.forEach((e) => {
+//     console.log(`${e.firstName} ${e.lastName} ${e.age}`);
+// });
+
+
+
+
+
+
 // const arr = [1,2,3,4]
 
 // let result = arr.map(()=>{
@@ -378,3 +433,105 @@
 // 6.SOFTWARE/DEV.TOOLS (chrome dev.toolS)
 // 7.DOCKER/DEPLOY.STATUS (Github page) (vercel) (Netlify)
 // 8.Bonus/learning.path (typescript)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Array methods
+// map
+// applay fuction on each elemet of first existing  array and return new arry from the existing one
+//  syntax
+// var new_array = array.map(function callback(element, index, Array){
+//   // return the value for new array
+// })
+// simple example
+// let array = [1, 2, 3, 4, 5, ]
+// let some = array.map(num => num * 3);
+// console.log(array)
+// // returned  new array
+// console.log(some);
+//  Array of object example
+// const student = [
+//   { name: "danish", age : 55, gender: "male"},
+//   { name :"barch", age : 77, gender: "shemale"},
+//   { name : "Ansar", age : 44},
+//   { name : "sost", age : 17},
+// ];
+// const result = student.map(num =>({value: num.name, text: num.age, def:num.gender}));
+// console.log(result);
+// filter
+// apllied conditinol statment against each element in array
+// if the condtion is true it return the value and if it os false did,nt reurn value
+// Syntax
+// var new_array = arr.filter(function callback (element, index, array){
+//   // than it return true or false
+// })
+// simple example
+// const number = [1, 2, 3, 4, 5,];
+// const even = number.filter(num=> num%2===0)
+// console.log(number)
+// // filter
+// console.log(even);
+// arrays of object exmple
+// const student = [
+//     { name: "danish", age : 55, gender: "male"},
+//     { name :"barch", age : 77, gender: "shemale"},
+//     { name : "Ansar", age : 44, gender: "shemale"},
+//     { name : "sost", age : 17, gender: "shemale"},
+//   ];
+//   const gojo = student.filter((a)=>{if(a.gender=='shemale'){return a}})
+//   console.log(gojo);
+//   let arr=[{id:1,title:'A', status:true}, {id:3,title:'B',status:true}, {id:2, title:'xys', status:true}];
+// //find where title=B
+// let x = arr.filter((a)=>{if(a.title=='B'){return a}});
+// console.log(x)
+// reduce
+// reduce an arry value down to just one value. to get the value . it run reducer function on each element.
+// simple example
+// const numer = [1,2,3,4]
+// const simple = numer.reduce((sum,num) => sum+num)
+// console.log(simple);
+// // const even = numer.reduce(function (result , item) {
+// //   return result + item
+// // })
+// console.log(even)
+// let months = [ {id :1 },{id :2 },{id :3 },]
+//  let monthsbyid = months.reduce((byId, month) => byId[month.id] = month ,{});
+//  console.log(monthsbyid);
+// sort
+// sorts the  element in an array and return the sorted array.
+// syntax \
+// Arr.sort([compareFunction])
+// rearranging  the numbers
+// let numbers = [0, 1, 2, 40, 20, 34,];
+// numbers.sort();
+// console.log(numbers);
+// example
+// let students = [
+//   {firstName : "danish", lastName : "jhon", age : 66},
+//   {firstName : "sost ", lastName : "janu", age : 88},
+//   {firstName : "mubeen jan", lastName : "jander", age :99}
+// ];
+// // const ggg= students.sort((a,b)=>{return a.age - b.age})
+// // console.log(ggg);
+// students.forEach((e)=>{
+//   console.log(`${e.firstName} ${e.lastName} ${e.age}`)
+// })
+
+
+
+
+
+
+
