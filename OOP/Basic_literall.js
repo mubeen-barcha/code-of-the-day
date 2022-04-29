@@ -199,7 +199,7 @@ class student{
   }
 
   static staticmethod(){
-    console.log("static method")
+    console.log("calling static method")
   }
 }
 
